@@ -1,0 +1,8 @@
+# Gemini Browser
+
+A browser for the Gemini Protocol written in micropython for MicropythonOS
+
+
+
+Wrote with love by Laurent Legoux
+

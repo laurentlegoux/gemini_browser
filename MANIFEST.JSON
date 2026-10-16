@@ -1,0 +1,23 @@
+{
+  "name": "Gemini Browser",
+  "publisher": "MicroPythonOS",
+  "short_description": "LVGL browser for the gemini protocol",
+  "long_description": "A browser for the gemini protocol and a service for micropythonOS",
+  "fullname": "gemini_browser",
+  "version": "0.1.0",
+  "category": ["network","communication"],
+  "activities": [
+    {
+      "entrypoint": "gemini.py",
+      "classname": "Gemini",
+      "intent_filters": [
+        {
+          "action": "main",
+          "category": "launcher"
+        },
+        {"action": "view_url", "urlPattern": "gemini://"},
+        {"action": "view", "mimeType": "text/gemini", "pathPattern": [".gmi"]}
+      ]
+    }
+  ]
+}
